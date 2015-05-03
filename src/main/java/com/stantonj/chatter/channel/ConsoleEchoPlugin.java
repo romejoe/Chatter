@@ -11,9 +11,9 @@ public class ConsoleEchoPlugin extends ChannelPlugin {
     @Override
     public void ReceiveMessage(Message msg) {
 
-        if(!StringMessage.class.isAssignableFrom(msg.getClass()))
+        if (!StringMessage.class.isAssignableFrom(msg.getClass()))
             return;
-        System.out.println(((StringMessage)msg).getMessage());
+        System.out.println(((StringMessage) msg).getMessage());
 
     }
 }

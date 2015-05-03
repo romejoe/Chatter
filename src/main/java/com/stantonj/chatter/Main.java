@@ -9,8 +9,8 @@ import com.stantonj.chatter.eventbus.GuavaEventBus;
  */
 public class Main {
 
-    public static void main(String[] args){
-        String channelID="testy";
+    public static void main(String[] args) {
+        String channelID = "testy";
         GuavaEventBus.init();
         SparkPlugin sparky = new SparkPlugin();
         ConsoleEchoPlugin echo = new ConsoleEchoPlugin();

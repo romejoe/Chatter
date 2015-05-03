@@ -9,22 +9,24 @@ public class EventBusRegistry {
     private static String DefaultBusType = null;
 
 
-    public static void RegisterEventBusType(Class<? extends EventBus> type){
+    public static void RegisterEventBusType(Class<? extends EventBus> type) {
         busTypes.putIfAbsent(type.getName(), type);
-        if(DefaultBusType == null)
+        if (DefaultBusType == null)
             DefaultBusType = type.getTypeName();
     }
 
-    public static EventBus GetOrCreateBus(String id){
+    public static EventBus GetOrCreateBus(String id) {
         return GetOrCreateBus(id, DefaultBusType);
     }
-    public static EventBus GetOrCreateBus(String id, String type){
+
+    public static EventBus GetOrCreateBus(String id, String type) {
         return GetOrCreateBus(id, busTypes.get(type));
     }
-    public static EventBus GetOrCreateBus(String id, Class<? extends EventBus> type){
+
+    public static EventBus GetOrCreateBus(String id, Class<? extends EventBus> type) {
         assert id != null && !id.isEmpty() && type != null;
 
-        if(!buses.containsKey(id))
+        if (!buses.containsKey(id))
             try {
                 buses.putIfAbsent(id, type.newInstance());
             } catch (InstantiationException | IllegalAccessException e) {

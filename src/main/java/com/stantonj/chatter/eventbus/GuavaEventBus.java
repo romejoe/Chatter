@@ -5,7 +5,7 @@ package com.stantonj.chatter.eventbus;
  */
 public class GuavaEventBus extends EventBus {
 
-    static{
+    static {
         init();
     }
 
