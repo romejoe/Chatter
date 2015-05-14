@@ -1,9 +1,9 @@
-package com.stantonj.chatter.channel;
+package com.stantonj.chattr.channel;
 
 import com.google.common.eventbus.Subscribe;
-import com.stantonj.chatter.eventbus.EventBus;
-import com.stantonj.chatter.eventbus.EventBusRegistry;
-import com.stantonj.chatter.message.Message;
+import com.stantonj.chattr.eventbus.EventBus;
+import com.stantonj.chattr.eventbus.EventBusRegistry;
+import com.stantonj.chattr.message.Message;
 
 import java.util.HashMap;
 import java.util.Map;

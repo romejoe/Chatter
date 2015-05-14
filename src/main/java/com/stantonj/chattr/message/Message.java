@@ -1,4 +1,4 @@
-package com.stantonj.chatter.message;
+package com.stantonj.chattr.message;
 
 import java.io.Serializable;
 

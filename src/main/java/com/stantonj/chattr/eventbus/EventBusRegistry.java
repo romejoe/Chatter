@@ -1,4 +1,4 @@
-package com.stantonj.chatter.eventbus;
+package com.stantonj.chattr.eventbus;
 
 import java.util.concurrent.ConcurrentHashMap;
 

@@ -1,19 +1,21 @@
-package com.stantonj.chatter.channel;
+package com.stantonj.chattr.handlers;
 
-import com.stantonj.chatter.message.StringMessage;
+import com.stantonj.chattr.message.StringMessage;
 
+import static com.stantonj.chattr.channel.ChannelRegistry.GetChannel;
 import static spark.Spark.post;
 
 /**
  * Created by jstanton on 5/3/15.
  */
-public class SparkPlugin extends ChannelPlugin {
+public class SparkPlugin {
     public SparkPlugin() {
-
         post("/Spark/:ChannelName", (req, res) -> {
             StringMessage msg = new StringMessage();
             msg.setMessage(req.body());
-            PostMessage(req.params(":ChannelName"), msg);
+
+            GetChannel(req.params(":ChannelName")).PostMessage(msg);
+
             return "";
         });
     }

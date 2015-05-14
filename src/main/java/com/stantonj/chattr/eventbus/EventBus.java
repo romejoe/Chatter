@@ -1,8 +1,5 @@
-package com.stantonj.chatter.eventbus;
+package com.stantonj.chattr.eventbus;
 
-/**
- * Created by jstanton on 5/2/15.
- */
 public abstract class EventBus {
 
     public abstract void Publish(Object event);
