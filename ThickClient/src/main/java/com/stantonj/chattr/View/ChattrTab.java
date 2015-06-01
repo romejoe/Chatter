@@ -1,4 +1,4 @@
-package com.stantonj.chatter.View;
+package com.stantonj.chattr.View;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
