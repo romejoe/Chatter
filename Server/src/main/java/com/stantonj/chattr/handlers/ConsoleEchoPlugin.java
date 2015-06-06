@@ -8,7 +8,7 @@ import com.stantonj.chattr.message.StringMessage;
 /**
  * Created by jstanton on 5/3/15.
  */
-public class ConsoleEchoPlugin extends MessageHandler {
+public class ConsoleEchoPlugin implements MessageHandler {
 
     @Subscribe
     public void PrintMessage(MessageModificationEvent e) {

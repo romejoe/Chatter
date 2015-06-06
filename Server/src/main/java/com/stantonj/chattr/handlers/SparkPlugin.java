@@ -11,8 +11,8 @@ import static spark.Spark.post;
 public class SparkPlugin {
     public SparkPlugin() {
         post("/Spark/:ChannelName", (req, res) -> {
-            StringMessage msg = new StringMessage();
-            msg.setMessage(req.body());
+            StringMessage msg = new StringMessage(req.body(), null);
+
 
             GetChannel(req.params(":ChannelName")).PostMessage(msg);
 

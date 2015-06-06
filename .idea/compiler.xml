@@ -22,13 +22,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="Chatter" />
-        <module name="Chattr" />
+        <module name="CLI" />
+        <module name="Server" />
+        <module name="ThickClient" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Chatter" target="1.8" />
-      <module name="Chattr" target="1.8" />
+      <module name="Chattr" target="1.5" />
+      <module name="CLI" target="1.8" />
+      <module name="Server" target="1.8" />
+      <module name="ThickClient" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

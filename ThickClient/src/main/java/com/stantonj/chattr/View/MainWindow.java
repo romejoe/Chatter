@@ -1,35 +1,35 @@
 package com.stantonj.chattr.View;
 
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.SceneAntialiasing;
-import javafx.scene.paint.Paint;
+import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
 /**
  * Created by Joey on 5/30/15.
  */
-public class MainWindow extends Scene {
-    public MainWindow(Parent root) {
-        super(root);
+public class MainWindow{
+
+    public void start(Stage primaryStage) throws Exception {
+        BorderPane rootPane = new BorderPane();
+        ChatAreaGroupTab chatty = new ChatAreaGroupTab();
+        ChattrTab tab1 = new ChattrTab();
+        ChattrTab tab2 = new ChattrTab();
+
+        tab1.setText("tab1");
+        tab1.setContent(new Label("Hello from tab1"));
+
+        tab2.setText("tab2");
+        tab2.setContent(new Label("Hello from tab2"));
+
+        chatty.getTabs().add(tab1);
+        chatty.getTabs().add(tab2);
+
+        rootPane.centerProperty().set(chatty);
+
+        Scene scene = new Scene(rootPane);
+
+        primaryStage.setScene(scene);
     }
 
-    public MainWindow(Parent root, double width, double height) {
-        super(root, width, height);
-    }
-
-    public MainWindow(Parent root, Paint fill) {
-        super(root, fill);
-    }
-
-    public MainWindow(Parent root, double width, double height, Paint fill) {
-        super(root, width, height, fill);
-    }
-
-    public MainWindow(Parent root, double width, double height, boolean depthBuffer) {
-        super(root, width, height, depthBuffer);
-    }
-
-    public MainWindow(Parent root, double width, double height, boolean depthBuffer, SceneAntialiasing antiAliasing) {
-        super(root, width, height, depthBuffer, antiAliasing);
-    }
 }

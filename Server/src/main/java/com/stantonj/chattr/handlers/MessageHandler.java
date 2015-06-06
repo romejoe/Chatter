@@ -8,9 +8,14 @@ import lombok.Setter;
 /**
  * Created by Joey on 5/13/15.
  */
-public class MessageHandler {
-    @Setter
-    @Getter(AccessLevel.PROTECTED)
-    private EventBus handlerBus;
+public interface MessageHandler {
+    default void SetHandlerBus(EventBus bus){
+        
+    }
+
+    default EventBus GetHandlerBus(){
+
+        return null;
+    }
 
 }

@@ -1,5 +1,6 @@
 package com.stantonj.chattr;
 
+import com.stantonj.chattr.View.MainWindow;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
@@ -105,7 +106,7 @@ public class Driver extends Application{
             FXCollections.observableArrayList();
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Button btn = new Button();
+        /*Button btn = new Button();
         btn.setText("Say 'Hello World'");
         btn.setOnAction(event -> System.out.println("Hello World!"));
 
@@ -165,10 +166,14 @@ public class Driver extends Application{
             }
         }).start();
 
-        Scene scene = new Scene(root, 300, 250);
 
-        primaryStage.setTitle("Hello World!");
-        primaryStage.setScene(scene);
+*/
+
+        primaryStage.setTitle("Chattr");
+        MainWindow win = new MainWindow();
+
+        win.start(primaryStage);
+
         primaryStage.show();
 
 

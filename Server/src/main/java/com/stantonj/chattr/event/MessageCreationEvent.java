@@ -9,4 +9,5 @@ public class MessageCreationEvent extends MessageModificationEvent {
     public MessageCreationEvent(Message newMessage) {
         super(newMessage);
     }
+
 }

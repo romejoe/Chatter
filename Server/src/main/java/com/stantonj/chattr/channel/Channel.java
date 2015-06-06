@@ -18,7 +18,7 @@ public class Channel {
 
     private String ChannelID;
     private EventBus eventBus;
-    private Set<MessageHandler> MessageHandlers;
+    private Set<Object> MessageHandlers;
 
 
     public Channel(String ChannelID){
@@ -51,7 +51,7 @@ public class Channel {
         eventBus.Publish(e);
     }
 
-    public void RegisterMessageHandler(MessageHandler handler){
+    public void RegisterMessageHandler(Object handler){
         assert handler != null && !MessageHandlers.contains(handler);
 
         eventBus.Subscribe(handler);
@@ -60,7 +60,7 @@ public class Channel {
         assert MessageHandlers.contains(handler);
     }
 
-    public void UnregisterMessageHandler(MessageHandler handler){
+    public void UnregisterMessageHandler(Object handler){
         assert handler != null && MessageHandlers.contains(handler);
 
         eventBus.UnSubscribe(handler);
