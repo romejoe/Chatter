@@ -1,6 +1,6 @@
 # Chattr [![Build Status](https://travis-ci.org/romejoe/Chattr.svg?branch=master)](https://travis-ci.org/romejoe/Chattr)
 
-Another chat application. 
+Another chat application, but with fine grain, pluggable encryption for chats and other cool things. 
 
 ## Installation
 
