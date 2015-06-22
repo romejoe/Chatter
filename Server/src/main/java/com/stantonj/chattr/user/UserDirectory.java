@@ -1,5 +1,6 @@
 package com.stantonj.chattr.user;
 
+import javax.naming.OperationNotSupportedException;
 import javax.security.sasl.AuthenticationException;
 
 /**
@@ -7,6 +8,10 @@ import javax.security.sasl.AuthenticationException;
  */
 public interface UserDirectory {
 
-    Long AuthenticateUser(Object obj) throws AuthenticationException;
+    User AuthenticateUser(String username, Object authentication) throws AuthenticationException;
+
+    default User RegisterUser(String username, Object authentication) throws OperationNotSupportedException{
+        throw new OperationNotSupportedException();
+    }
 
 }

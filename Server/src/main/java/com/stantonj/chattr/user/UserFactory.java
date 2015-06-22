@@ -12,24 +12,36 @@ import java.util.Set;
 public class UserFactory implements UserDirectory{
 
 
-    private UserFactory _factory = new UserFactory();
+    private UserFactory(){
+
+    }
+
+    private static UserFactory _factory;
+
+
 
     private static Set<UserDirectory> directories = new HashSet<>();
+
+    static public UserFactory GetInstance(){
+        if(_factory == null)
+            _factory = new UserFactory();
+        return _factory;
+    }
 
     static public void RegisterUserDirectory(UserDirectory directory){
         directories.add(directory);
     }
 
     @Override
-    public Long AuthenticateUser(Object obj) throws AuthenticationException {
-        return _AuthenticateUser(obj);
+    public User AuthenticateUser(String username, Object authentication) throws AuthenticationException {
+        return _AuthenticateUser(username, authentication);
     }
 
-    private Long _AuthenticateUser(Object obj) throws AuthenticationException{
+    private User _AuthenticateUser(String username, Object auth) throws AuthenticationException{
         AuthenticationException ex = new AuthenticationException("All registered user directories failed to authenticate the user");
         for(UserDirectory dir: directories){
             try{
-                return dir.AuthenticateUser(obj);
+                return dir.AuthenticateUser(username, auth);
             }
             catch(AuthenticationException e){
                 ex.addSuppressed(e);

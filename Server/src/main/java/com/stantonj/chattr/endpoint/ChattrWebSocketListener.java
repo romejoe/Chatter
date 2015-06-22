@@ -6,53 +6,26 @@ import com.google.gson.reflect.TypeToken;
 import com.stantonj.chattr.channel.Channel;
 import com.stantonj.chattr.channel.ChannelRegistry;
 import com.stantonj.chattr.event.MessageCreationEvent;
-import com.stantonj.chattr.eventbus.EventBus;
-import com.stantonj.chattr.handlers.MessageHandler;
 import com.stantonj.chattr.message.StringMessage;
+import com.stantonj.chattr.user.User;
+import com.stantonj.chattr.user.UserFactory;
+import lombok.extern.log4j.Log4j2;
 import org.eclipse.jetty.websocket.api.RemoteEndpoint;
 import org.eclipse.jetty.websocket.api.Session;
 import org.eclipse.jetty.websocket.api.WebSocketListener;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+import javax.security.sasl.AuthenticationException;
 import java.io.IOException;
 import java.util.*;
 
-/**
- * Created by Joey on 6/2/15.
- */
-
+@Log4j2
 public class ChattrWebSocketListener implements WebSocketListener {
 
-    Object identity;
+    User user;
     private RemoteEndpoint Endpoint;
     Set<Channel> listeningChannels = new HashSet<>();
     Map<Channel, MessageSender> channels = new HashMap<>();
-
-    private class MessageSender{
-        private RemoteEndpoint Endpoint;
-        private Object Me;
-        private String ChannelId;
-
-        public MessageSender(RemoteEndpoint endpoint, Object me){
-            Endpoint = endpoint;
-            Me = me;
-        }
-
-        @Subscribe
-        public void MessageCreated(MessageCreationEvent event) throws IOException {
-//            if(event.getMessage().getAuthor() == Me)
-                //return;
-
-            Map<String, Object> toSend = new HashMap<>();
-
-            //toSend.put("Author", event.getMessage().getAuthor());
-            toSend.put("Message", event.getMessage());
-            toSend.put("Timestamp", event.getTimeStamp());
-            toSend.put("ChannelId", ChannelId);
-            Endpoint.sendString(new Gson().toJson(toSend));
-        }
-    }
-
 
     @Override
     public void onWebSocketBinary(byte[] bytes, int i, int i1) {
@@ -70,14 +43,11 @@ public class ChattrWebSocketListener implements WebSocketListener {
         //String Password = session.getUpgradeRequest().getHeader("Pass");
         //assert Username != null && Password != null;
 
-        String Username = String.valueOf(System.currentTimeMillis());
         //Map authenticationRequest = new HashMap<>();
         //authenticationRequest.put("Username", Username);
         //authenticationRequest.put("Password", Password);
 
-        //TODO!:do authentication checks
 
-        identity = Username;
         Endpoint = session.getRemote();
         session.getUpgradeResponse().setSuccess(true);
 
@@ -88,6 +58,30 @@ public class ChattrWebSocketListener implements WebSocketListener {
 
     }
 
+    private void sendAuthenticationResults(boolean results) throws IOException {
+        Map<String, Object> toSend = new HashMap<>();
+        toSend.put("EventType", "AuthenticationResponse");
+        toSend.put("Results", results);
+        this.Endpoint.sendString(new Gson().toJson(toSend));
+    }
+
+
+    private void preAuthenticationHandle(Map<String, Object> data){
+        String username = (String) data.get("UserName");
+        String authentication = (String) data.get("Authentication");
+        if(username == null)
+            return;
+
+        try {
+            user = UserFactory.GetInstance().AuthenticateUser(username, authentication);
+            sendAuthenticationResults(user != null);
+        } catch (AuthenticationException e) {
+            log.error("Authentication failed", e);
+        } catch (IOException e) {
+            log.error("Send authentication results failed", e);
+        }
+
+    }
 
 
     @Override
@@ -96,14 +90,23 @@ public class ChattrWebSocketListener implements WebSocketListener {
         Gson gson = new Gson();
         Map<String,Object> map = gson.fromJson(s, new TypeToken<Map<String, Object>>(){}.getType());
         Channel ch = null;
+
+        if(user == null){
+            preAuthenticationHandle(map);
+            return;
+        }
+
+
         if(map.containsKey("ChannelId"))
             ch = ChannelRegistry.GetChannel(map.get("ChannelId").toString());
 
 
+
         switch(map.get("EventType").toString()){
+
             case "ListenToChannel": {
                 assert ch != null;
-                MessageSender ms = new MessageSender(Endpoint, identity);
+                MessageSender ms = new MessageSender(Endpoint, user);
 
                 ch.RegisterMessageHandler(ms);
                 channels.put(ch, ms);
@@ -118,21 +121,22 @@ public class ChattrWebSocketListener implements WebSocketListener {
             }
             case "WriteMessage": {
                 assert ch != null;
-                StringMessage msg = new StringMessage(map.get("Message").toString(), identity);
+                StringMessage msg = new StringMessage(map.get("Message").toString(), user);
 
                 ch.PostMessage(msg);
                 break;
             }
             case "CreateChannel": {
+                //TODO:channel access control list
                 Channel newChannel = new Channel(map.get("ChannelId").toString());
 
                 ChannelRegistry.RegisterChannel(newChannel);
-                MessageSender ms = new MessageSender(Endpoint, identity);
+                MessageSender ms = new MessageSender(Endpoint, user);
 
                 newChannel.RegisterMessageHandler(ms);
                 channels.put(newChannel, ms);
 
-                StringMessage msg = new StringMessage("Well, hi there!!", identity);
+                StringMessage msg = new StringMessage("Well, hi there!!", user);
 
                 newChannel.PostMessage(msg);
 

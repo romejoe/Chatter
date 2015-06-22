@@ -2,48 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56ae924d-f836-417c-b47f-334227054798" name="Default" comment="added test webview code for messages">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Security/Authenticator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CLI/CLI.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/View/ChatAreaGroupTab.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrSession.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrSessionFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrSessionHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/endpoint/ChattrWebSocketListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/HttpSessionHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Controller/MainWindowController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserDirectory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserFactory.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sparkjava_spark_core_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_0_2_v20130417.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_0_2_v20130417.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_0_2_v20130417.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_0_2_v20130417.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_0_2_v20130417.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_0_2_v20130417.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_0_2_v20130417.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_0_2_v20130417.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_orbit_javax_servlet_3_0_0_v201112011016.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/channel/Channel.java" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/channel/Channel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chattr.iml" afterPath="$PROJECT_DIR$/Chattr.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/handlers/ConsoleEchoPlugin.java" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/handlers/ConsoleEchoPlugin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrConnection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrState.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/HashMapDirectory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/endpoint/MessageSender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/StateChangeHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/StateChangeListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/WebSocketConnection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Experimental/htmlListCell.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrModel.java" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/endpoint/ChattrWebSocketListener.java" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/endpoint/ChattrWebSocketListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Driver.java" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Driver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/Main.java" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/View/MainWindow.java" afterPath="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/View/MainWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/message/Message.java" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/message/Message.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/event/MessageCreationEvent.java" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/event/MessageCreationEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/handlers/MessageHandler.java" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/handlers/MessageHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/handlers/SparkPlugin.java" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/handlers/SparkPlugin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/message/StringMessage.java" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/message/StringMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserDirectory.java" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserDirectory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserFactory.java" afterPath="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/pom.xml" afterPath="$PROJECT_DIR$/Server/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThickClient/pom.xml" afterPath="$PROJECT_DIR$/ThickClient/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -72,11 +45,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ChattrWebSocketListener.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/endpoint/ChattrWebSocketListener.java">
+      <file leaf-file-name="Driver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7126437">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="106" column="44" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
+              <folding>
+                <element signature="method#start#0;class#Driver#0" expanded="false" />
+                <element signature="e#3883#3884#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChattrModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <element signature="e#492#493#0" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChattrConnection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,86 +85,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Channel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/channel/Channel.java">
+      <file leaf-file-name="StateChangeHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/StateChangeHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GuavaEventBus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/eventbus/GuavaEventBus.java">
+      <file leaf-file-name="WebSocketConnection.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/WebSocketConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.53667265">
+              <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
               <folding>
-                <element signature="e#462#463#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#964#965#0" expanded="true" />
+                <element signature="e#1002#1003#0" expanded="true" />
+                <element signature="e#1518#1519#0" expanded="true" />
+                <element signature="e#1545#1546#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventBus.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/com/google/common/eventbus/EventBus.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.44">
-              <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSocketServerFactory.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/websocket-server/9.3.0.M2/websocket-server-9.3.0.M2.jar!/org/eclipse/jetty/websocket/server/WebSocketServerFactory.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.84">
-              <caret line="340" column="16" selection-start-line="340" selection-start-column="16" selection-end-line="340" selection-end-column="16" />
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/pom.xml">
+        <entry file="file://$PROJECT_DIR$/ThickClient/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+              <caret line="95" column="40" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpSessionHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/HttpSessionHandler.java">
+      <file leaf-file-name="StateChangeListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/StateChangeListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChattrSessionFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrSessionFactory.java">
+      <file leaf-file-name="ChattrState.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrState.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="htmlListCell.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Experimental/htmlListCell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#htmlListCell#0;class#htmlListCell#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="64" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -192,17 +178,12 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chatter/View/MainWindow.java" />
         <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chatter/Driver.java" />
-        <option value="$PROJECT_DIR$/ThickClient/pom.xml" />
         <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Controller/MainWindowController.java" />
         <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/View/ChatAreaGroupTab.java" />
-        <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Driver.java" />
         <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/View/MainWindow.java" />
-        <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrModel.java" />
         <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrSession.java" />
         <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrSessionHandler.java" />
         <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Security/Authenticator.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserDirectory.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserFactory.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/endpoint/WebSocket.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/channel/Channel.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/message/StringMessage.java" />
@@ -212,12 +193,26 @@
         <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/handlers/ConsoleEchoPlugin.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/handlers/MessageHandler.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/handlers/SparkPlugin.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/Main.java" />
         <option value="$PROJECT_DIR$/Server/src/resources/Manifest.MF" />
         <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/HttpSessionHandler.java" />
         <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrSessionFactory.java" />
         <option value="$PROJECT_DIR$/Server/pom.xml" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserFactory.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/endpoint/MessageSender.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserDirectory.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/User.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/HashMapDirectory.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/Main.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/endpoint/ChattrWebSocketListener.java" />
+        <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Driver.java" />
+        <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Experimental/htmlListCell.java" />
+        <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrModel.java" />
+        <option value="$PROJECT_DIR$/ThickClient/pom.xml" />
+        <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/StateChangehandler.java" />
+        <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/StateChangeHandler.java" />
+        <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrConnection.java" />
+        <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrState.java" />
+        <option value="$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/WebSocketConnection.java" />
       </list>
     </option>
   </component>
@@ -242,8 +237,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="720" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="720" />
     <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -269,6 +265,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -287,89 +285,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chattr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chattr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chattr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chattr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chattr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chattr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chattr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chattr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="endpoint" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -379,11 +297,13 @@
     <property name="dynamic.classpath" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.stantonj.chattr.user" />
       <recent name="com.stantonj.chattr.Model" />
+      <recent name="com.stantonj.chattr.user" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -732,7 +652,8 @@
       <workItem from="1432783125909" duration="366000" />
       <workItem from="1432949548525" duration="14376000" />
       <workItem from="1433292093492" duration="6171000" />
-      <workItem from="1433533071720" duration="5450000" />
+      <workItem from="1433533071720" duration="6224000" />
+      <workItem from="1434421274828" duration="14374000" />
     </task>
     <task id="LOCAL-00001" summary="rearranged structure to server, cli and thick client&#10;started toying with CLI and thick clients">
       <created>1432783479073</created>
@@ -746,14 +667,20 @@
       <option name="project" value="LOCAL" />
       <updated>1433118816754</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added initial websocket endpoint to server&#10;started model for clientside&#10;toyed with tabs for gui">
+      <created>1433563317138</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1433563317138</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26363000" />
+    <option name="totallyTimeSpent" value="41511000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="0" />
+    <frame x="720" y="23" width="720" height="873" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -761,25 +688,25 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42412937" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24839948" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913843" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13194445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281704" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3879056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270809" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -796,23 +723,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rearranged structure to server, cli and thick client&#10;started toying with CLI and thick clients" />
     <MESSAGE value="added test webview code for messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test webview code for messages" />
+    <MESSAGE value="added initial websocket endpoint to server&#10;started model for clientside&#10;toyed with tabs for gui" />
+    <option name="LAST_COMMIT_MESSAGE" value="added initial websocket endpoint to server&#10;started model for clientside&#10;toyed with tabs for gui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/endpoint/ChattrWebSocketListener.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/endpoint/ChattrWebSocketListener.java</url>
-          <line>95</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/aggregate/jetty-all/9.2.7.v20150116/jetty-all-9.2.7.v20150116.jar!/org/eclipse/jetty/websocket/server/WebSocketServerFactory.class</url>
           <line>377</line>
@@ -833,21 +749,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/endpoint/ChattrWebSocketListener.java</url>
-          <line>140</line>
+          <line>75</line>
           <properties />
-          <option name="timeStamp" value="21" />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/endpoint/ChattrWebSocketListener.java</url>
-          <line>47</line>
+          <line>93</line>
           <properties />
-          <option name="timeStamp" value="25" />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="26" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -856,102 +772,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/message/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/event/MessageCreationEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/event/MessageModificationEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-          <folding>
-            <element signature="e#337#338#0" expanded="false" />
-            <element signature="e#369#370#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/message/StringMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/View/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrSessionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrSessionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/HttpSessionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Security/Authenticator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -966,46 +786,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37441498">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThickClient/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Controller/MainWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/View/ChattrTab.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21604939">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="171" column="37" selection-start-line="171" selection-start-column="37" selection-end-line="171" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1023,18 +807,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrSession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,25 +821,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/eventbus/EventBusRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -1128,7 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1136,9 +897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1146,9 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1166,7 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="474" column="0" selection-start-line="474" selection-start-column="0" selection-end-line="474" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,7 +936,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1191,32 +947,42 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#506#507#0" expanded="false" />
+            <element signature="e#550#551#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="64" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/websocket-server/9.3.0.M2/websocket-server-9.3.0.M2.jar!/org/eclipse/jetty/websocket/server/WebSocketServerFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.84">
+        <state vertical-scroll-proportion="0.0">
           <caret line="340" column="16" selection-start-line="340" selection-start-column="16" selection-end-line="340" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/com/google/common/eventbus/EventBus.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5121951">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/eventbus/GuavaEventBus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3090909">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#462#463#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1228,30 +994,217 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/eventbus/GuavaEventBus.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.4/lombok-1.16.4.jar!/lombok/extern/log4j/Log4j2.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23076923">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.3/log4j-api-2.3.jar!/org/apache/logging/log4j/spi/AbstractLogger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.4">
+          <caret line="243" column="0" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserDirectory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
-            <element signature="e#462#463#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/com/google/common/eventbus/EventBus.class">
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.44">
-          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="e#181#182#0" expanded="false" />
+            <element signature="e#214#215#0" expanded="false" />
+            <element signature="e#245#246#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/HashMapDirectory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/user/UserFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/endpoint/MessageSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.2.2/gson-2.2.2.jar!/com/google/gson/Gson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.4">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/com/stantonj/chattr/endpoint/ChattrWebSocketListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7126437">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="118" column="35" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Controller/MainWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Experimental/htmlListCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#htmlListCell#0;class#htmlListCell#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="106" column="44" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
+          <folding>
+            <element signature="method#start#0;class#Driver#0" expanded="false" />
+            <element signature="e#3883#3884#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="21" selection-start-line="86" selection-start-column="8" selection-end-line="90" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThickClient/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="40" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/StateChangeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/StateChangeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/ChattrState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThickClient/src/main/java/com/stantonj/chattr/Model/WebSocketConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53667265">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#1545#1546#0" expanded="true" />
           </folding>
         </state>
       </provider>

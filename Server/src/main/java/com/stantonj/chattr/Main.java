@@ -6,11 +6,17 @@ import com.stantonj.chattr.eventbus.GuavaEventBus;
 import com.stantonj.chattr.handlers.ConsoleEchoPlugin;
 import com.stantonj.chattr.handlers.SparkPlugin;
 
+import javax.naming.OperationNotSupportedException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.stantonj.chattr.user.HashMapDirectory;
+import com.stantonj.chattr.user.User;
+import com.stantonj.chattr.user.UserDirectory;
+import com.stantonj.chattr.user.UserFactory;
+import lombok.extern.log4j.Log4j2;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.ContextHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
@@ -24,6 +30,7 @@ import java.io.IOException;
 /**
  * Created by jstanton on 5/2/15.
  */
+@Log4j2
 public class Main {
 
 
@@ -42,9 +49,20 @@ public class Main {
         }
     }
 
+    public static void SetupUserDirectories() throws OperationNotSupportedException {
+        UserDirectory directory = new HashMapDirectory();
+        directory.RegisterUser("test", "test");
+        directory.RegisterUser("test2", "test");
+        UserFactory.RegisterUserDirectory(directory);
+    }
+
+
     public static void main(String[] args) throws Exception {
+
         GuavaEventBus.init();
         String channelID = "testy";
+
+        SetupUserDirectories();
 
         Channel channel = new Channel(channelID);
 
