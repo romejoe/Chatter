@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/experimental/CLI/CLI.iml" filepath="$PROJECT_DIR$/experimental/CLI/CLI.iml" group="experimental and modules" />
       <module fileurl="file://$PROJECT_DIR$/CLI/CLI.iml" filepath="$PROJECT_DIR$/CLI/CLI.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chattr.iml" filepath="$PROJECT_DIR$/Chattr.iml" />
       <module fileurl="file://$PROJECT_DIR$/Server/Server.iml" filepath="$PROJECT_DIR$/Server/Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Server/Server.iml" filepath="$PROJECT_DIR$/Server/Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/experimental/ThickClient/ThickClient.iml" filepath="$PROJECT_DIR$/experimental/ThickClient/ThickClient.iml" group="experimental and modules" />
       <module fileurl="file://$PROJECT_DIR$/ThickClient/ThickClient.iml" filepath="$PROJECT_DIR$/ThickClient/ThickClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/experimental/experimental.iml" filepath="$PROJECT_DIR$/experimental/experimental.iml" group="experimental and modules" />
     </modules>
   </component>
 </project>

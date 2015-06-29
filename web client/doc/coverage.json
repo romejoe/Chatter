@@ -1,0 +1,23 @@
+{
+  "coverage": "46.15%",
+  "expectCount": 13,
+  "actualCount": 6,
+  "files": {
+    "js/model/ChattrConnection.js": {
+      "expectCount": 5,
+      "actualCount": 4
+    },
+    "js/model/exceptions/MethodNotImplementedError.js": {
+      "expectCount": 1,
+      "actualCount": 1
+    },
+    "js/model/exceptions/NotImplementedError.js": {
+      "expectCount": 1,
+      "actualCount": 1
+    },
+    "js/model/WebSocketConnection.js": {
+      "expectCount": 6,
+      "actualCount": 0
+    }
+  }
+}
